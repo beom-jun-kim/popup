@@ -57,5 +57,6 @@ $(document).ready(function () {
   $(".slider").bxSlider({
     controls: false,
     pager: ($(this).find(".slider > div").length > 1) ? true: false,
+    touchEnabled: ($(this).find(".slider > div").length > 1) ? true: false,
   });
 });
