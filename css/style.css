@@ -89,9 +89,7 @@ header {
 }
 
 .main_popup .popUpImgbox {
-    border-radius: 7px;
     font-size: 0;
-    overflow: hidden;
 }
 
 .main_popup button {
@@ -101,6 +99,19 @@ header {
     color: white;
 }
 
-.main_popup .popup-slide img {
-    width: 100%;
+.main_popup .bx-wrapper {
+    margin: 0 !important;
+}
+
+.main_popup .bx-pager {
+    bottom: 35px !important;
+    z-index: 9999;
+}
+
+.main_popup .bx-pager-item a {
+    background: rgb(153, 153, 153) !important;
+}
+
+.main_popup .bx-pager-item a.active {
+    background: rgb(255, 255, 255) !important;
 }

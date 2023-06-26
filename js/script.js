@@ -52,3 +52,10 @@ var toggleMainPopup = function () {
 $(function () {
   toggleMainPopup();
 });
+
+$(document).ready(function () {
+  $(".slider").bxSlider({
+    controls: false,
+    slide: ($(".slider > div").length > 1) ? true: false,
+  });
+});
