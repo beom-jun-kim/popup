@@ -43,44 +43,64 @@ header {
     left: 0;
 }
 
-.popUp {
+/* 팝업창 */
+.main_popup {
     position: fixed;
     bottom: 0;
+    display: none;
 }
 
-.popUp .deleteBtn {
+.main_popup button {
+    border: 0;
+    background: none;
+}
+
+.overlay.on {
+    display: none;
+}
+
+.main_popup.on {
+    display: block;
+}
+
+.main_popup .btn_wrap {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.popUp .todayDelete {
+.main_popup .btn_today_close {
     display: flex;
     align-items: center;
+    color: #fff;
+    font-size: 17px;
 }
 
-.popUp .todayDelete p {
+.main_popup .btn_today_close p {
     border: thin solid white;
     border-radius: 50%;
-    padding: 2px 7px 3px;
-    margin-right: 5px;
+    padding: 2px 8px 3px;
+    margin-right: 8px;
 }
 
-.popUp .popUpImgWrap {
+.main_popup .popUpImgWrap {
     padding: 1.5rem;
-    border-radius: 5% 5% 0 0;
     background: white;
 }
 
-.popUp .popUpImgbox {
+.main_popup .popUpImgbox {
     border-radius: 7px;
     font-size: 0;
     overflow: hidden;
 }
 
-.popUp button {
+.main_popup button {
     background: none;
     border: none;
     font-size: 15px;
     color: white;
+}
+
+.main_popup .popup-slide img {
+    width: 100%;
 }
