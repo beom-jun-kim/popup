@@ -66,7 +66,7 @@ header {
 .main_popup .btn_wrap {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 12px;
 }
 
 .main_popup .btn_today_close {
@@ -84,7 +84,7 @@ header {
 }
 
 .main_popup .popUpImgWrap {
-    padding: 1.5rem;
+    padding: 1.9rem;
     background: white;
 }
 
@@ -101,6 +101,7 @@ header {
 
 .main_popup .bx-wrapper {
     margin: 0 !important;
+    border: none !important;
 }
 
 .main_popup .bx-pager {
