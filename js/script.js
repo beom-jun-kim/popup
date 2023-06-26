@@ -1,6 +1,6 @@
 $(".btn_close").click(function () {
   $(".main_popup").hide();
-  $(".overlay").hide();
+  $(".popup-overlay").hide();
 });
 
 var toggleMainPopup = function () {
@@ -29,10 +29,10 @@ var toggleMainPopup = function () {
   // 쿠키 읽고 화면 보이게
   if (handleStorage.getStorage("today")) {
     $(".main_popup").removeClass("on");
-    $(".overlay").addClass("on");
+    $(".popup-overlay").addClass("on");
   } else {
     $(".main_popup").addClass("on");
-    $(".overlay").removeClass("on");
+    $(".popup-overlay").removeClass("on");
   }
 
   // 오늘하루 보지 않기 버튼
@@ -40,7 +40,7 @@ var toggleMainPopup = function () {
     // 로컬 스토리지에 today라는 이름으로 1일(24시간 뒤) 동안 보이지 않게
     handleStorage.setStorage("today", 1);
     $(this).parents(".main_popup.on").removeClass("on");
-    $(".overlay").addClass("on");
+    $(".popup-overlay").addClass("on");
   });
 
   // 일반 닫기 버튼
