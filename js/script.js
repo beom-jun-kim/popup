@@ -56,11 +56,6 @@ $(function () {
 $(document).ready(function () {
   $(".slider").bxSlider({
     controls: false,
+    pager: ($(this).find(".slider > div").length > 1) ? true: false,
   });
-
-  const slider = $(".slider").bxSlider();
-  const totalSlides = slider.getSlideCount();
-  if (totalSlides === 1) {
-    $(".slider").destroy();
-  }
 });
