@@ -3,13 +3,13 @@ $(".btn_close").click(function () {
   $(".popup-overlay").hide();
 });
 
-var toggleMainPopup = function () {
+const toggleMainPopup = function () {
   /* 스토리지 제어 함수 정의 */
-  var handleStorage = {
+  const handleStorage = {
     // 스토리지에 데이터 쓰기(이름, 만료일)
     setStorage: function (name, exp) {
       // 만료 시간 구하기(exp를 ms단위로 변경)
-      var date = new Date();
+      const date = new Date();
       date = date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
 
       // 로컬 스토리지에 저장하기
@@ -18,7 +18,7 @@ var toggleMainPopup = function () {
     },
     // 스토리지 읽어오기
     getStorage: function (name) {
-      var now = new Date();
+      let now = new Date();
       now = now.setTime(now.getTime());
       // 현재 시각과 스토리지에 저장된 시각을 각각 비교하여
       // 시간이 남아 있으면 true, 아니면 false 리턴
