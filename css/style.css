@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    width: 50%;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* 오버레이 */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popUp {
+    position: fixed;
+    bottom: 0;
+}
+
+.popUp .deleteBtn {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.popUp .todayDelete {
+    display: flex;
+    align-items: center;
+}
+
+.popUp .todayDelete p {
+    border: thin solid white;
+    border-radius: 50%;
+    padding: 2px 7px 3px;
+    margin-right: 5px;
+}
+
+.popUp .popUpImgWrap {
+    padding: 1.5rem;
+    border-radius: 5% 5% 0 0;
+    background: white;
+}
+
+.popUp .popUpImgbox {
+    border-radius: 7px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.popUp button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
